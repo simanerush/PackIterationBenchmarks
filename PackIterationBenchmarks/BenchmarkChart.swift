@@ -66,7 +66,7 @@ struct BenchmarkChart: View {
 
          benchmarkChart
 
-         ShareLink(item: benchmarkChart.frame(width: 750, height: 1000).render()) {
+         ShareLink(item: benchmarkChart.frame(width: 1000, height: 750).render()) {
            Label("Export as PDF", systemImage: "square.and.arrow.up")
          }
        }
