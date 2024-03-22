@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
   let benchmarks = Benchmarks().allBenchmarks()
-
+  
   var body: some View {
     NavigationStack {
       List {
         ForEach(benchmarks, id: \.self) { b in
           if case .before = b.state {
             NavigationLink {
-              BenchmarksView(benchmarkResults: Benchmarks().allBenchmarks().filter { $0.name == b.name })
+              BenchmarksView(benchmarkResults: benchmarks.filter { $0.name == b.name })
             } label: {
               Text(b.name.rawValue)
                 .font(.title2)
@@ -28,7 +28,7 @@ struct ContentView: View {
       }
       .navigationTitle("Benchmarks")
     }
-
+    
   }
 }
 
