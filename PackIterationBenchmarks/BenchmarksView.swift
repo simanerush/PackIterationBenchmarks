@@ -26,9 +26,9 @@ struct BenchmarksView: View {
             case .compileTime: "Compile Time (s)"
             case .runTime: "Run Time (s)"
             case .binarySize: "Binary Size (KB)"
-            case .compileTimeO: "Compile Time (`-O`) (s)"
-            case .runTimeO: "Run Time (`-O`) (s)"
-            case .binarySizeOsize: "Binary Size (`-Osize`) (KB)"
+            case .compileTimeO: "Compile Time (-O) (s)"
+            case .runTimeO: "Run Time (-O) (s)"
+            case .binarySizeOsize: "Binary Size (-Osize) (KB)"
             }
           }())
       }
